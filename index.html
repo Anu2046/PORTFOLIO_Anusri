@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anusri | Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="maindiv">
+       <div id="logo" ><img src = "white.jpeg" width="170px"></div>
+        <div id = "container">Anusri</div>
+        <nav>
+            <i><a href="#about">About</a>
+            <a href="#skill">Skills</a>
+            <a href="#project">Projects</a>
+            <a href="#resume">Résumé</a>
+            <a href="#contact">Contact</a></i>
+        </nav>
+    </div>
+    <div id="content"><img src="bg.png" width="700px">
+        <img src="bg2.png" width="700px"></div>
+    <div id="maindiv">
+     <div id="box1">
+        <div id="about">Who's Anusri?</div>
+            <div class="des">Hi! I'm a book lover who enjoys reading fiction!<br>I'm currently pursuing B.Tech in Computer and Communication Engineering at an NAAC-accredited university. 
+            While my academic focus is on the field of communication, my keen interest and aptitude lie in the realm of design.
+            <br>I am a creative individual and a perfectionist who meticulously pays attention <br>to every detail. I am an ambivert who ardently loves exploring and <br>acquiring new knowledge, and I am deeply passionate about <br>the work I do. </div>
+        </div>
+        <div id="frame">
+        <img src="frame (2).png" width="550px" height="800px"></div>
+        <div id="pic">
+            <img src  = 'pic2.png'width = '340px'height="390px">
+        </div>
+    </div>
+    <div id="maindiv">
+        <div id="pic2"><img src="skill.jpeg" width="500px"></div>
+        <div id="box2">
+            <div id="skill">Skills</div>
+            <div class="des2">
+                <div id="maindiv">
+                <ul>
+                    <li>Organizational Skills</li>
+                <li>Communication Skills</li>
+                <li>Presentation Skills</li>
+                <li>Interpersonal Skills</li></ul>
+                <ul><li>HTML</li>
+                <li>CSS</li>
+                <li>Basics of JavaScript</li>
+                <li>Basics of C Programming</li></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="maindiv">
+        <div id="box1">
+           <div id="project">Projects</div>
+               <div class="des3">
+                Get to know my work<br> till now →</div>
+           </div>
+           <div id="pic3">
+            <a href = "project.html"><img src="project.jpeg"  width="600px"></a></div>
+       </div>
+       <div id="maindiv">
+        <div id="pic2"><img src="resume.jpeg" width="600px"></div>
+        <div id="box3">
+            <div id="resume">Résumé</div>
+            <div class="des4">Click the button to download! <br>
+                   <br><button onclick="window.open('ANUSRI S_CV.pdf', '_blank')">Download ⤓</button></div>
+        </div>
+    </div>
+    <div id="contact">
+        <div id="wave">
+            <img src='wave (2).png'>
+            <img src="contact1.png" class="overlay-image" style="width: 900px; height: auto;">
+            <img src="mail.webp" class="overlay-image add-img1" style="width: 70px; height: auto;">
+            <div class="text-overlay-contact">anusrisuresh2611@gmail.com</div>
+            <a href = "https://www.linkedin.com/in/anusri-s-a93470306" target="_blank"><img src="linkedin.png" class="overlay-image add-img2" style="width: 70px; height: auto;"></a>
+            <img src="phone.webp" class="overlay-image add-img3" style="width: 60px; height: auto;">
+            <div class="text-overlay-contact">+91 8940793531</div>
+            <img src="insta.webp" class="overlay-image add-img4" style="width: 70px; height: auto;">
+            <div class="text-overlay-contact">anu_.612</div>
+        </div>
+    </div>
+    <footer>&copy Anusri S. 2024. All rights reserved.</footer>
+    
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
